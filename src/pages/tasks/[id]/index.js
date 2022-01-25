@@ -55,7 +55,7 @@ export default function TaskDetail({ task, error }) {
 }
 
 export async function getServerSideProps({ query: { id } }) {
-  const res = await fetch(`http://localhost:3000/api/tasks/${id}`);
+  const res = await fetch(`https://next-blog-neon-phi.vercel.app/${id}`);
 
   if (res.status === 200) {
     const task = await res.json();
