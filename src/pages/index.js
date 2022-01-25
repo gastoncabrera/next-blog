@@ -50,6 +50,7 @@ export default function HomePage({ tasks }) {
 export const getServerSideProps = async (ctx) => {
   const res = await fetch("https://next-blog-neon-phi.vercel.app");
   const tasks = await res.json();
+  console.log(tasks);
 
   return {
     props: {
