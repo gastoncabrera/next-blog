@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "node pages/index.js"
   },
   "dependencies": {
     "mongoose": "^6.1.5",
