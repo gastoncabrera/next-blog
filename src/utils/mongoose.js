@@ -13,11 +13,3 @@ export async function dbConnect() {
 
   console.log(db.connection.db.databaseName);
 }
-
-connection.on("connected", () => {
-  console.log("Mongodb is connected");
-});
-
-connection.on("error", (err) => {
-  console.log(err);
-});
